@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { ProductService } from "./products/product.service";
 
 @Component({
   selector: 'pm-root',
@@ -6,7 +7,8 @@ import { Component } from "@angular/core";
           <div><h1>{{pageTitle}}</h1>
               <product-list></product-list>
           </div>
-          `
+          `,
+  providers: [ProductService]
 })
 
 export class AppComponent {
