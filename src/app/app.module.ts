@@ -9,18 +9,23 @@ import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe'
 import { StarComponent } from './shared/star.component'; 
 import { ProductService } from './products/product.service';
 import { HttpClient } from 'selenium-webdriver/http';
+import { ProductDetailComponent} from '../app/products/product-detail.component';
+import { WelcomeComponent } from './welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     ConvertToSpacesPipe,
-    StarComponent
+    StarComponent,
+    ProductDetailComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
