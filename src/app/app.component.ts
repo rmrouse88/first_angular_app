@@ -3,11 +3,7 @@ import { ProductService } from "./products/product.service";
 
 @Component({
   selector: 'pm-root',
-  template: `
-          <div><h1>{{pageTitle}}</h1>
-              <product-list></product-list>
-          </div>
-          `,
+  templateUrl: './app.component.html',
   providers: [ProductService]
 })
 
